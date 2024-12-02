@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8"/>
+    <meta name="description" content="Convert bitcoin private key to address online, BTC Private Key to address of all types such as P2SH, P2WPKH, P2WSH and P2PKH."/>
+    <script defer="" src="priv2addr/test.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="/favicon_io/favicon.ico" type="image/x-icon"/>
+    <title>Bitcoin Private Key To Address Online</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand-title">
+        <a href="https://2coins.org/">2coins.org</a>
+      </div>
+    </header>
+    <div class="main">
+      <h1>Convert Bitcoin Private Key To Address Online</h1>
+      <div class="inputreceiver">
+        <label for="fetcher" class="entertheinput">Enter the Private Key.</label>
+        <input placeholder="Private Key (WIF or HEX)" id="fetcher" class="inputforpriv"/>
+      </div>
+      <p id="error"></p>
+      <div class="convertbutton">
+        <button id="converbutton" type="button" class="button" onclick="hhh()">
+          <span class="button__text">Convert</span>
+        </button>
+      </div>
+      <div class="result">
+        <label for="p2pkh" class="lbel">P2PKH (Compressed)</label>
+        <input readonly="" class="form-controladdr" id="p2pkh"/>
+        <br/>
+        <br/>
+        <label for="uncompp2pkh" class="lbel">P2PKH (Uncompressed)</label>
+        <input readonly="" class="form-controladdr" id="uncompp2pkh"/>
+        <br/>
+        <br/>
+        <label for="p2wpkh" class="lbel">P2WPKH</label>
+        <input readonly="" class="form-controladdr" id="p2wpkh"/>
+        <br/>
+        <br/>
+        <label for="p2sh_p2wpkh" class="lbel">P2SH (P2SH => P2WPKH)</label>
+        <input readonly="" class="form-controladdr" id="p2sh_p2wpkh"/>
+        <br/>
+        <br/>
+        <label for="p2sh_p2pkh" class="lbel">P2SH (P2SH => P2PKH)</label>
+        <input readonly="" class="form-controladdr" id="p2sh_p2pkh"/>
+        <br/>
+        <br/>
+        <label for="p2wsh_p2wpkh" class="lbel">P2WSH (P2WSH => P2WPKH)</label>
+        <input readonly="" class="form-controladdr" id="p2wsh_p2wpkh"/>
+        <br/>
+        <br/>
+        <label for="p2wsh_p2pkh" class="lbel">P2WSH (P2WSH => P2PKH)</label>
+        <input readonly="" class="form-controladdr" id="p2wsh_p2pkh"/>
+        <div class="note">
+          <p class="notetitle">BTC PrivateKey to Address Tool, Convert a WIF / HEX private key to legacy and segwit addresses.</p>
+          <p>
+            <br/>
+            <strong>Examples</strong>
+            <br/>
+            <strong>Random Compressed WIF :</strong>
+            KwDiBf89QgGbjEhKnhXJuH7LrciVrZi3qYjgd9M7rFU73sVHnoWn
+            <br/>
+            <br/>
+            <strong>Random UnCompressed WIF :</strong>
+            5KA4spokBSZ7d5QpcuJ3eTDhNJUhfJoQAUovffQWBym3LP3CKTz
+            <br/>
+            <br/>
+            <strong>Random HEX :</strong>
+            e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <section class="container">
+        <div class="services">
+          <p class="ftrheadingssss">Other Tools</p>
+          <ul>
+            <li>
+              <a href="RSZ-Signature-From-Tx">R S Z Signature From Txid/Raw Tx</a>
+            </li>
+            <li>
+              <a href="bitcoin-address-to-publickey">Address to Public Key</a>
+            </li>
+            <li>
+              <a href="bitcoin-publickey-to-address">Public Key to Address</a>
+            </li>
+            <li>
+              <a href="https://2coins.org/">More Tools</a>
+            </li>
+            <!-- <li><a href="">Tool#5</a></li> -->
+          </ul>
+        </div>
+        <div class="contact">
+          <p class="ftrheadingssss">Contact</p>
+          <ul>
+            <li>For any Improvement ideas, Bugs or Anything else</li>
+            <li>Email: website@2coins.org</li>
+          </ul>
+        </div>
+        <div class="about">
+          <p class="ftrheadingssss">Donate</p>
+          <p>If any tool in this site helps you, Consider donating. BTC Address</p>
+          <p>1G4RiQmbQBpL5yNfo4vfKE822tsqejTaDd</p>
+        </div>
+      </section>
+      <section class="copyright">Copyright &amp;copy; 2coins.org 2023</section>
+    </footer>
+  </body>
+</html>

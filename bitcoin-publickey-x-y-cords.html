@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8"/>
+    <meta name="description" content="Get Bitcoin public key x y coordinates online, btc public key coordinates from compressed or uncompressed public key."/>
+    <script defer="" src="xypub/test.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="/favicon_io/favicon.ico" type="image/x-icon"/>
+    <title>Bitcoin Public Key X,Y Coordinates</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand-title">
+        <a href="https://2coins.org/">2coins.org</a>
+      </div>
+    </header>
+    <div class="main">
+      <h1>Get Bitcoin Public Key X Y Coordinates Online</h1>
+      <div>
+        <label for="fetcher" class="entertheinput">Enter the Public Key.</label>
+        <input placeholder="Public Key (Compressed or Uncompressed)" id="fetcher" class="inputforpub"/>
+      </div>
+      <p id="error"></p>
+      <div class="convertbutton">
+        <button id="converbutton" type="button" class="button" onclick="hhh()">
+          <span class="button__text">Convert</span>
+        </button>
+      </div>
+      <div class="result">
+        <label for="xcord" class="lbel">X Coordinate</label>
+        <input readonly="" class="form-controlpub" id="xcord"/>
+        <label for="ycord" class="lbel">Y Coordinate</label>
+        <input readonly="" class="form-controlpub" id="ycord"/>
+        <br/>
+        <br/>
+        <br/>
+        <label for="decxcord" class="lbel">X Coordinate DECIMAL</label>
+        <input readonly="" class="form-controlpub" id="decxcord"/>
+        <label for="decycord" class="lbel">Y Coordinate DECIMAL</label>
+        <input readonly="" class="form-controlpub" id="decycord"/>
+        <br/>
+        <br/>
+        <br/>
+        <label for="comp" class="lbel">Compressed Publickey</label>
+        <input readonly="" class="form-controlpub" id="comp"/>
+        <label for="uncomp" class="lbel">Uncompressed Publickey</label>
+        <input readonly="" class="form-controlpub" id="uncomp"/>
+        <div class="note">
+          <p class="notetitle">BTC PublicKey Coordinate Tool, Enter a uncompressed or compressed public key and get X and Y Coordinate in HEX and Decimal.</p>
+          <p>
+            <br/>
+            <strong>Examples</strong>
+            <br/>
+            <strong>Compressed Public Key :</strong>
+            0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798
+            <br/>
+            <br/>
+            <strong>UnCompressed Public Key :</strong>
+            0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <section class="container">
+        <div class="services">
+          <p class="ftrheadingssss">Other Tools</p>
+          <ul>
+            <li>
+              <a href="RSZ-Signature-From-Tx">R S Z Signature From Txid/Raw Tx</a>
+            </li>
+            <li>
+              <a href="bitcoin-address-to-publickey">Address to Public Key</a>
+            </li>
+            <li>
+              <a href="bitcoin-publickey-to-address">Public Key to Address</a>
+            </li>
+            <li>
+              <a href="https://2coins.org/">More Tools</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <p class="ftrheadingssss">Contact</p>
+          <ul>
+            <li>For any Improvement ideas, Bugs or Anything else</li>
+            <li>Email: website@2coins.org</li>
+          </ul>
+        </div>
+        <div class="about">
+          <p class="ftrheadingssss">Donate</p>
+          <p>If any tool in this site helps you, Consider donating. BTC Address</p>
+          <p>1G4RiQmbQBpL5yNfo4vfKE822tsqejTaDd</p>
+        </div>
+      </section>
+      <section class="copyright">Copyright &amp;copy; 2coins.org 2023</section>
+    </footer>
+  </body>
+</html>
